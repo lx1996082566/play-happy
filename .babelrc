@@ -3,10 +3,16 @@
         [
             "@babel/preset-env",
             {
+                "targets": {
+                    "node": "current"
+                },
                 "corejs": 3,
                 "useBuiltIns": "usage"
             }
-        ]
+        ],
+        "@babel/preset-typescript" // ts支持
     ],
-    "plugins": ["@babel/transform-runtime"]
+    "plugins": [
+        "@babel/transform-runtime"
+    ]
 }
